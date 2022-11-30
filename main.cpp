@@ -6,9 +6,9 @@
 #include <cmath>
 #include <algorithm>
 #include <sys/stat.h>
-#include "src/Model.cpp"
-#include "src/Trainer.cpp"
-#include "src/Dataset.cpp"
+#include "tingpt/model.cpp"
+#include "tingpt/train.cpp"
+#include "tingpt/data.cpp"
 
 using namespace std;
 

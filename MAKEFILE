@@ -15,13 +15,13 @@ main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp
 
 data.o: data.h
-	$(CC) $(CFLAGS) src/data.cpp
+	$(CC) $(CFLAGS) tingpt/data.cpp
 
 model.o: model.h
-	$(CC) $(CFLAGS) model.cpp
+	$(CC) $(CFLAGS) tingpt/model.cpp
 
 train.o: train.cpp
-	$(CC) $(CFLAGS) train.cpp
+	$(CC) $(CFLAGS) tingpt/train.cpp
 
 clean:
 	rm -rf *.o main

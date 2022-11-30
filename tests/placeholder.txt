@@ -1,0 +1,4 @@
+// Your unit tests could be here. Just make a pull request 
+// No really pull requests are very much appreciated.
+// I wrote this for me to understand GPTs better and writing tests is often boring but this project turned out to be somewhat good 
+// ToDo I will sitdown new year and write some tests.
