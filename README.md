@@ -1,5 +1,6 @@
 # tiny-GPT EDU
-500 lines > tiny-GPT.
+500 lines > tiny-GPT
+
 A tiny GPT written in C++ with utilizing torch based on Andrej Karpathys https://github.com/karpathy/minGPT.
 
 But with easier to understand more structured codebase(atleast I think so) and yeah it's completely in C++. Turned out to be better  than I thought :)
