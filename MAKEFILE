@@ -1,28 +1,11 @@
-MAIN=main.cpp
+CC=gcc
+CFLAGS=-I.
 
-OBJECTS=$(MAIN:.cpp=.o)
+%.o: %.c $(DEPS)
+        $(CC) -c -o $@ $< $(CFLAGS)
 
-CC=g++
-
-CFLAGS=-c -Wall
-
-
-
-all: $(MAIN)
-	$(CC) $(MAIN) -o main
-
-main.o: main.cpp
-	$(CC) $(CFLAGS) main.cpp
-
-data.o: data.h
-	$(CC) $(CFLAGS) tingpt/data.cpp
-
-model.o: model.h
-	$(CC) $(CFLAGS) tingpt/model.cpp
-
-train.o: train.cpp
-	$(CC) $(CFLAGS) tingpt/train.cpp
+tingpt: main.o model.o train.o data.o
+        $(CC) -o tingpt main.o model.o train.o data.o
 
 clean:
-	rm -rf *.o main
-
+        rm -f *.o tingpt
